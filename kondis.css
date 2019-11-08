@@ -23,7 +23,7 @@ form[name="f"] > table:nth-child(1){
     display:none;
     max-width: 100%;
 }
-form[name="f"] > table:nth-child(1) td{
+form > table:nth-child(1) td{
     display:block;
     width: auto;
     z-index: 1;
@@ -31,25 +31,25 @@ form[name="f"] > table:nth-child(1) td{
 }
 
 /*legend*/
-form[name="f"] > table:nth-child(2){
+form > table:nth-child(2){
     display:none;
 }
 /*results*/
-form[name="f"] > table:nth-child(3){
+form > table:nth-child(3){
     width: 100%;
     max-width: 100%;
     display:block;
 }
-form[name="f"] > table:nth-child(3) td{
+form > table:nth-child(3) td{
     display:block;
     max-width: 100%;
     width: 100%;
 }
-form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(1), form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(2), form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(3){
+form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
     display:inline-block;
     width: 25%;
 }
-form[name="f"] > table:nth-child(3) > tbody > tr:nth-child(1){
+form > table:nth-child(3) > tbody > tr:nth-child(1){
     display:none;
 }
 
