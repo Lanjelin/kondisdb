@@ -35,10 +35,9 @@ form > table:nth-child(2){
     display:none;
 }
 /*results*/
-form > table:nth-child(3){
-    width: 100%;
-    max-width: 100%;
-    display:block;
+.body{
+    padding: 0;
+    margin: 0;
 }
 
 form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
