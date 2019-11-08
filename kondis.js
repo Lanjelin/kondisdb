@@ -1,2 +1,2 @@
-$('.center-column').removeAttr("style");
-$('body').removeAttr("style");
+$(".center-column").removeAttr("style");
+$("body").removeAttr("style");
