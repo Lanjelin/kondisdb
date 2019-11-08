@@ -40,7 +40,7 @@ form > table:nth-child(3){
     max-width: 100%;
     display:block;
 }
-form > table:nth-child(3) td{
+form > table:nth-child(3) > tbody > tr {
     display:block;
     max-width: 100%;
     width: 100%;
@@ -49,9 +49,14 @@ form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child
     display:inline-block;
     width: 25%;
 }
+form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
+    display:inline-block;
+    width: 100%;
+}
 form > table:nth-child(3) > tbody > tr:nth-child(1){
     display:none;
 }
+
 
 /*headers*/
 .center-column > .body > tbody > tr:first-child > .body > table {
