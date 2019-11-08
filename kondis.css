@@ -1,0 +1,62 @@
+.left-column, .right-column{
+    display:none;
+}
+.center-column, .body, table, body, tbody, tr{
+    display:inline-block;
+    width: 100%;
+}
+@media screen and (max-height: 450px) {
+  form[name="f"] > table:nth-child(1) {padding-top: 15px;}
+  form[name="f"] > table:nth-child(1) a {font-size: 18px;}
+}
+/*Filter window*/
+form[name="f"] > table:nth-child(1){
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 1.5s;
+  /*display:block;*/
+    display:none;
+    max-width: 100%;
+}
+form[name="f"] > table:nth-child(1) td{
+    display:block;
+    width: auto;
+    z-index: 1;
+    max-width: 50%;
+}
+
+/*legend*/
+form[name="f"] > table:nth-child(2){
+    display:none;
+}
+/*results*/
+form[name="f"] > table:nth-child(3){
+    width: 100%;
+    max-width: 100%;
+    display:block;
+    
+}
+form[name="f"] > table:nth-child(3) td{
+    display:block;
+    max-width: 100%;
+    width: 100%;
+}
+form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(1), form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(2), form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(3){
+    display:inline-block;
+    width: 25%;
+}
+
+
+/*headers*/
+.center-column > .body > tbody > tr:first-child > .body > table {
+display:none;
+}
+/*footers*/
+.center-column > .body > tbody > tr:not(:first-child){
+display:none;
+}
