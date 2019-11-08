@@ -45,16 +45,13 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
 }
 /*Date and Location on single line*/
 form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
-    display:inline-block;
+    display:block;
     width: 25%;
 }
 /*Event name and length on each line*/
 form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
-    display:inline-block;
+    display:block;
     width: 100%;
-}
-form > table:nth-child(3), form > table:nth-child(3) > tbody{
-    display:inline;
 }
 
 
