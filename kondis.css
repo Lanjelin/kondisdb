@@ -53,7 +53,6 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
     display:none;
 }
 
-
 /*headers*/
 .center-column > .body > tbody > tr:first-child > .body > table {
 display:none;
