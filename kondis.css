@@ -39,7 +39,6 @@ form[name="f"] > table:nth-child(3){
     width: 100%;
     max-width: 100%;
     display:block;
-    
 }
 form[name="f"] > table:nth-child(3) td{
     display:block;
@@ -49,6 +48,9 @@ form[name="f"] > table:nth-child(3) td{
 form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(1), form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(2), form[name="f"] > table:nth-child(3) > tbody > tr > td:nth-child(3){
     display:inline-block;
     width: 25%;
+}
+form[name="f"] > table:nth-child(3) > tbody > tr:nth-child(1){
+    display:none;
 }
 
 
