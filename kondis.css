@@ -35,7 +35,7 @@ form > table:nth-child(2){
 /*### results ###*/
 /*Hide header*/
 form > table:nth-child(3) > tbody > tr:nth-child(1){
-    display:block;
+    display:none;
 }
 /*We need the space*/
 .body, table{
