@@ -40,11 +40,7 @@ form > table:nth-child(3){
     max-width: 100%;
     display:block;
 }
-form > table:nth-child(3) > tbody > tr {
-    display:block;
-    max-width: 100%;
-    width: 100%;
-}
+
 form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
     display:inline-block;
     width: 25%;
