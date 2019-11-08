@@ -1,15 +1,13 @@
+/* Hide them ads left & right*/
 .left-column, .right-column{
     display:none;
 }
-.center-column, .body, table, body, tbody, tr{
-    display:inline-block;
-    width: 100%;
-}
+
 @media screen and (max-height: 450px) {
   form > table:nth-child(1) {padding-top: 15px;}
   form > table:nth-child(1) a {font-size: 18px;}
 }
-/*Filter window*/
+/*### Filter window ###*/
 form > table:nth-child(1){
   height: 100%;
   width: 100%;
@@ -34,24 +32,22 @@ form > table:nth-child(1) td{
 form > table:nth-child(2){
     display:none;
 }
-/*results*/
-form > table:nth-child(3){
-    width: 100%;
-    max-width: 100%;
-    display:block;
-}
-form > table:nth-child(3) td{
-    display:block;
-    max-width: 100%;
-    width: 100%;
-}
-form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
-    display:inline-block;
-    width: 25%;
-}
+/*### results ###*/
+/*Hide header*/
 form > table:nth-child(3) > tbody > tr:nth-child(1){
     display:none;
 }
+/*We need the space*/
+.body, table{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+form > table:nth-child(3) > tbody > tr > td{
+    display:inline;
+}
+
 
 /*headers*/
 .center-column > .body > tbody > tr:first-child > .body > table {
