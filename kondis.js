@@ -1,3 +1,4 @@
   window.addEventListener('load', function () {
-    document.getElementsByClassName('center-column').style.width = null;
+    $('.center-column').removeAttr("style");
+    $('body').removeAttr("style");
   }, false);
