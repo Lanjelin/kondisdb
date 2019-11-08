@@ -6,11 +6,11 @@
     width: 100%;
 }
 @media screen and (max-height: 450px) {
-  form[name="f"] > table:nth-child(1) {padding-top: 15px;}
-  form[name="f"] > table:nth-child(1) a {font-size: 18px;}
+  form > table:nth-child(1) {padding-top: 15px;}
+  form > table:nth-child(1) a {font-size: 18px;}
 }
 /*Filter window*/
-form[name="f"] > table:nth-child(1){
+form > table:nth-child(1){
   height: 100%;
   width: 100%;
   position: fixed;
