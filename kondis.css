@@ -52,6 +52,7 @@ td{
 form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
     display:block;
     width: 100%;
+    color: f00;
 }
 
 
