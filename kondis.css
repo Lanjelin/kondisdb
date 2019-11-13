@@ -4,6 +4,7 @@
 }
 
 @media screen and (max-height: 450px) {
+
 }
 /*### Filter window ###*/
 form > table:nth-child(1){
@@ -43,9 +44,9 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
     width: 100%;
 }
 /*Date and Location on single line*/
-td {
-    display:inline;
-    width: 25%;
+form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
+    float: left;
+    width: 30%;
 }
 /*Event name and length on each line*/
 form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
