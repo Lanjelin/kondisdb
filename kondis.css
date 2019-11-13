@@ -4,8 +4,6 @@
 }
 
 @media screen and (max-height: 450px) {
-  form > table:nth-child(1) {padding-top: 15px;}
-  form > table:nth-child(1) a {font-size: 18px;}
 }
 /*### Filter window ###*/
 form > table:nth-child(1){
@@ -42,10 +40,11 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
     padding: 0;
     margin: 0;
     border: 0;
+    width: 100%;
 }
 /*Date and Location on single line*/
 form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
-    display:block;
+    display:inline-block;
     width: 25%;
 }
 /*Event name and length on each line*/
