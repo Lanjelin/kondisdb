@@ -45,7 +45,7 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
 }
 /*Date and Location on single line*/
 td{
-    float: left;
+    display: block;
     width: 30%;
 }
 /*Event name and length on each line*/
