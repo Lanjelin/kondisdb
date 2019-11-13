@@ -43,7 +43,7 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
     width: 100%;
 }
 /*Date and Location on single line*/
-form > table:nth-child(3) > tbody > tr > td:nth-child(1), form > table:nth-child(3) > tbody > tr > td:nth-child(2), form > table:nth-child(3) > tbody > tr > td:nth-child(3){
+td {
     display:inline-block;
     width: 25%;
 }
