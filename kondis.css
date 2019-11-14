@@ -33,7 +33,8 @@ form > table:nth-child(2){
 }
 /*### results ###*/
 /*Hide header*/
-form > table:nth-child(3) > tbody > tr:nth-child(1){
+form > table:nth-child(3) > tbody > tr:nth-child(1),
+form > table:nth-child(3) > tbody > tr:nth-child(2){
     display:none;
 }
 /*We need the space*/
@@ -44,18 +45,39 @@ form > table:nth-child(3) > tbody > tr:nth-child(1){
     width: 100%;
 }
 /*Date and Location on single line*/
-/*form > table:nth-child(3) > tbody > tr > td:nth-child(1),
-form > table:nth-child(3) > tbody > tr > td:nth-child(2),
-form > table:nth-child(3) > tbody > tr > td:nth-child(3){
+.lineone td{
     display:inline-block;
-    width: 30%;
-    color: f00;
-}*/
-/*Event name and length on each line*/
-/*form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
-    display:block;
+    width: 25%;
+    /*min-width: 0%;*/
+    padding: 0px;
+    margin: 0px;
+    padding-top: px;
+}
+.linetwo{
+
+}
+.name{
     width: 100%;
-}*/
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 5px;
+    display:block;
+}
+.distance{
+    /*width:25%;*/
+    text-align: right;
+}
+tr{
+    padding-bottom:5px;
+    width: 100%;
+    display: block;
+}
+.body, .center-column > .body > tbody{
+    display:block;
+    width:100%;
+    padding:0;
+    margin:0;
+}
 
 
 /*headers*/
