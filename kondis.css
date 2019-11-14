@@ -52,10 +52,10 @@ form > table:nth-child(3) > tbody > tr > td:nth-child(3){
     color: f00;
 }*/
 /*Event name and length on each line*/
-form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
+/*form > table:nth-child(3) > tbody > tr > td:nth-child(4), form > table:nth-child(3) > tbody > tr > td:nth-child(5){
     display:block;
     width: 100%;
-}
+}*/
 
 
 /*headers*/
