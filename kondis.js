@@ -1,6 +1,26 @@
 
-
 $(function() {
+    $("form > table:nth-child(1)").addClass("search");
+    $("<div type='button'>").insertAfter("form").attr("id","showfilter");
+    $("#showfilter").text("Søk");
+    $("#showfilter").click(function() {
+        if($("#showfilter").text() == "Lukk"){
+            $(".search").hide();
+            $("#showfilter").text("Søk");
+            return;
+        }
+        if($("#showfilter").text() == "Søk"){
+            $(".search").show();
+            $("#showfilter").text("Lukk");
+            return;
+        }
+    });
+    //Flytte "Søk i karusell-link
+    $("form > table:nth-child(1) > tbody > tr:nth-child(3) td a").insertAfter("form > table:nth-child(1) > tbody > tr:nth-child(2) td a").attr("style","padding-left:10px;");
+    // Fjerne mellmorom forran checkboxes
+    $("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html($.trim($("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html().split("&nbsp;").join(" ")));
+
+    $("form > table:nth-child(1) > tbody > tr:nth-child(8) td:nth-child(2)").removeAttr("align");
 
     /* ### Results ### */
     $(".center-column").removeAttr("style");
