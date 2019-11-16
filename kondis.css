@@ -8,24 +8,35 @@
 }
 /*### Filter window ###*/
 form > table:nth-child(1){
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 1.5s;
-  /*display:block;*/
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 1.5s;
+    /*display:block;*/
     display:none;
     max-width: 100%;
 }
 form > table:nth-child(1) td{
     display:block;
-    width: auto;
     z-index: 1;
-    max-width: 50%;
+    width:90%;
 }
+form > table:nth-child(1) > tbody > tr:nth-child(8) td:nth-child(2) {
+    padding-top: 10px;
+}
+#showfilter{
+    position:absolute;
+    top:5px;
+    right:25px;
+    font-size:25px;
+    cursor:pointer;
+    z-index: 1;
+}
+
 
 /*legend*/
 form > table:nth-child(2){
@@ -46,14 +57,15 @@ form > table:nth-child(3) > tbody > tr:nth-child(2){
 }
 /*Date and Location on single line*/
 .lineone td{
-    display:inline-block;
-    width: 25%;
+    /*display:inline-block;*/
+    /*width: 25%;*/
+    width: calc(100%/8);
     /*min-width: 0%;*/
     padding: 0px;
     margin: 0px;
     padding-top: px;
 }
-.linetwo{
+.linetwo a{
 
 }
 .name{
@@ -64,7 +76,6 @@ form > table:nth-child(3) > tbody > tr:nth-child(2){
     display:block;
 }
 .distance{
-    /*width:25%;*/
     text-align: right;
 }
 tr{
@@ -79,6 +90,16 @@ tr{
     margin:0;
 }
 
+form > table:nth-child(3) > tbody > tr:nth-child(3){
+    table-layout: fixed;
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+form > table:nth-child(3){
+    padding-top: 25px;
+    background-color: white;
+}
 
 /*headers*/
 .center-column > .body > tbody > tr:first-child > .body > table {
