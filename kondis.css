@@ -16,7 +16,6 @@ form > table:nth-child(1){
     left: 0;
     overflow-x: hidden;
     transition: 1.5s;
-    /*display:block;*/
     display:none;
     max-width: 100%;
 }
@@ -65,9 +64,6 @@ form > table:nth-child(3) > tbody > tr:nth-child(2){
     margin: 0px;
     padding-top: px;
 }
-.linetwo a{
-
-}
 .name{
     width: 100%;
     padding: 0px;
@@ -103,9 +99,9 @@ form > table:nth-child(3){
 
 /*headers*/
 .center-column > .body > tbody > tr:first-child > .body > table {
-display:none;
+    display:none;
 }
 /*footers*/
 .center-column > .body > tbody > tr:not(:first-child){
-display:none;
+    display:none;
 }
