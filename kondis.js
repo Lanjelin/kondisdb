@@ -1,5 +1,4 @@
 
-
 $(function() {
     $("form > table:nth-child(1)").addClass("search");
     $("<div>").insertAfter("form").attr("id","showfilter").attr("type","button");
@@ -21,9 +20,20 @@ $(function() {
     $("form > table:nth-child(1) > tbody > tr:nth-child(3) td a").insertAfter("form > table:nth-child(1) > tbody > tr:nth-child(2) td a").attr("style","padding-left:10px;");
     $("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html($.trim($("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html().split("&nbsp;").join(" ")));
     $("form > table:nth-child(1) > tbody > tr:nth-child(8) td:nth-child(2)").removeAttr("align");
-    $("form > table:nth-child(1) > tbody > tr:nth-child(4) td:nth-child(1)").removeAttr("width").attr("id","fylke");
-    $("form > table:nth-child(1) > tbody > tr:nth-child(4) td:nth-child(2)").removeAttr("width").attr("id","kommune");
-    $("form > table:nth-child(1) > tbody > tr:nth-child(4) td:nth-child(3)").removeAttr("width").attr("id","arrangement");
+
+    $("form > table:nth-child(1) > tbody > tr:nth-child(2)").attr("id","link");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(3)").attr("id","type");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(4)").attr("id","fylke");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(5)").attr("id","fra");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(6)").attr("id","helgene");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(7)").attr("id","kvalitet");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(8)").attr("id","per");
+    $("<tr>").attr("id","arrangement").insertAfter("#fylke").prepend($("#fylke td:nth-child(3)"));
+    $("<tr>").attr("id","kommune").insertAfter("#fylke").prepend($("#fylke td:nth-child(2)"));
+    $("<tr>").attr("id","distanse").insertAfter("#fra").prepend($("#fra td:nth-child(3)"));
+    $("<tr>").attr("id","til").insertAfter("#fra").prepend($("#fra td:nth-child(2)"));
+    $("<tr>").attr("id","lisens").insertAfter("#helgene").prepend($("#helgene td:nth-child(2)"));
+    $("<tr>").attr("id","sok").insertAfter("#per").prepend($("#per td:nth-child(2)"));
 
     $(".center-column").removeAttr("style");
     $("body").removeAttr("style");
