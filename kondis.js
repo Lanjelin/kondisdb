@@ -31,7 +31,7 @@ $(function() {
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(3)").addClass("city");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(4)").addClass("name");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(5)").addClass("distance");
-    $('.lineone').each(function(){
+    $(".lineone").each(function(){
         $("<tr class=\"linetwo\" bgcolor=\""+$(this).attr("bgcolor")+" \">").insertAfter(this).prepend($(this).find(".name"));
         $(this).find(".distance").insertAfter($(this).find(".city"));
     });
