@@ -1,4 +1,5 @@
 
+
 $(function() {
     $("form > table:nth-child(1)").addClass("search");
     $("<div>").insertAfter("form").attr("id","showfilter").attr("type","button");
@@ -15,9 +16,15 @@ $(function() {
             return;
         }
     });
+
+
     $("form > table:nth-child(1) > tbody > tr:nth-child(3) td a").insertAfter("form > table:nth-child(1) > tbody > tr:nth-child(2) td a").attr("style","padding-left:10px;");
     $("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html($.trim($("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html().split("&nbsp;").join(" ")));
     $("form > table:nth-child(1) > tbody > tr:nth-child(8) td:nth-child(2)").removeAttr("align");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(4) td:nth-child(1)").removeAttr("width").attr("id","fylke");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(4) td:nth-child(2)").removeAttr("width").attr("id","kommune");
+    $("form > table:nth-child(1) > tbody > tr:nth-child(4) td:nth-child(3)").removeAttr("width").attr("id","arrangement");
+
     $(".center-column").removeAttr("style");
     $("body").removeAttr("style");
     $("table").removeAttr("style");
