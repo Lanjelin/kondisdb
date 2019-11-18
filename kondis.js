@@ -1,3 +1,4 @@
+
 $(function() {
     $("form > table:nth-child(1)").addClass("search");
     $("<div type='button'>").insertAfter("form").attr("id","showfilter");
@@ -26,12 +27,19 @@ $(function() {
     $("table").removeAttr("style");
     //Setter inn en ekstra TR for navn på aktivitet, flytter distanse til første TR etter by
     $("form > table:nth-child(3) > tbody > tr").addClass("lineone");
+    console.log("tr");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(1)").addClass("date");
+    console.log("date!");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(2)").addClass("region");
+    console.log("region!");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(3)").addClass("city");
+    console.log("city!");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(4)").addClass("name");
+    console.log("name!");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(5)").addClass("distance");
-    $(".lineone").each(function(){
+    console.log("distance!");
+    $('.lineone').each(function(){
+        console.log("each");
         $("<tr class=\"linetwo\" bgcolor=\""+$(this).attr("bgcolor")+" \">").insertAfter(this).prepend($(this).find(".name"));
         $(this).find(".distance").insertAfter($(this).find(".city"));
     });
