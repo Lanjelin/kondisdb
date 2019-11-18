@@ -2,7 +2,7 @@
 $(function() {
     console.log("start filter");
     $("form > table:nth-child(1)").addClass("search");
-    $("<div type='button'>").insertAfter("form").attr("id","showfilter");
+    $("<div type=\"button\">").insertAfter("form").attr("id","showfilter");
     $("#showfilter").text("Søk");
     $("#showfilter").click(function() {
         if($("#showfilter").text() == "Lukk"){
@@ -40,7 +40,7 @@ $(function() {
     console.log("name!");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(5)").addClass("distance");
     console.log("distance!");
-    $('.lineone').each(function(){
+    $(".lineone").each(function(){
         console.log("each");
         $("<tr class=\"linetwo\" bgcolor=\""+$(this).attr("bgcolor")+" \">").insertAfter(this).prepend($(this).find(".name"));
         $(this).find(".distance").insertAfter($(this).find(".city"));
