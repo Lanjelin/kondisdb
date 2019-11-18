@@ -1,5 +1,6 @@
 
 $(function() {
+    console.log("start filter");
     $("form > table:nth-child(1)").addClass("search");
     $("<div type='button'>").insertAfter("form").attr("id","showfilter");
     $("#showfilter").text("Søk");
@@ -15,13 +16,14 @@ $(function() {
             return;
         }
     });
-    //Flytte "Søk i karusell-link
+    console.log("start karusell");
+    //Flytte Søk i karusell-link
     $("form > table:nth-child(1) > tbody > tr:nth-child(3) td a").insertAfter("form > table:nth-child(1) > tbody > tr:nth-child(2) td a").attr("style","padding-left:10px;");
     // Fjerne mellmorom forran checkboxes
     $("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html($.trim($("form > table:nth-child(1) > tbody > tr:nth-child(3) td").html().split("&nbsp;").join(" ")));
     $("form > table:nth-child(1) > tbody > tr:nth-child(8) td:nth-child(2)").removeAttr("align");
-
-    /* ### Results ### */
+    console.log("start results");
+    /*  Results  */
     $(".center-column").removeAttr("style");
     $("body").removeAttr("style");
     $("table").removeAttr("style");
