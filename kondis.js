@@ -32,7 +32,7 @@ $(function() {
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(4)").addClass("name");
     $("form > table:nth-child(3) > tbody > tr > td:nth-child(5)").addClass("distance");
     $(".lineone").each(function(){
-        $("<tr>").addClass("linetwo").attr("bgColor", $(this).attr("bgColor")).insertAfter(this).prepend($(this).find(".name"));
+        $("<tr>").addClass("linetwo").attr("bgColor", $(this).attr("bgColor")).insertAfter($(this)).prepend($(this).find(".name"));
         $(this).find(".distance").insertAfter($(this).find(".city"));
     });
     console.log("ready!");
